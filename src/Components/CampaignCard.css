@@ -1,0 +1,21 @@
+.action-icon {
+    height: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.game-icon {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
