@@ -14,24 +14,24 @@ export const getDayDifference = (campaignList, id) => {
     return filteredList;
 }
 
-export const getDayMessage = (id, diff) => {
+export const getDayMessage = (id, diff, language) => {
     let number = Math.abs(diff);
-    let period = "day";
+    let period = language.period[0];
     if(number>=365) {
         number=parseInt(number/365);
-        period = "year"
+        period = language.period[2]
     }
     else if(number>=30) {
         number=parseInt(number/31);
-        period = "month"
+        period = language.period[1]
     }
     if(number>1)
-        period+="s";
+        period+=language.period[3];
     if(id === 1)
-        number = number + " " + period + " ahead";
+        number = number + " " + period + " " + language.period[4];
     else if(id === 2)
-        number = "Ongoing";
+        number = language.period[5];
     else if(id === 3)
-        number = number + " " + period + " ago";
+        number = number + " " + period + " " + language.period[6];
     return number;
 }

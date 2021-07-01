@@ -6,6 +6,7 @@ import Header from './Components/Header'
 import NavigationBar from './Components/NavigationBar'
 import { getDayDifference, getDayDifferenceForOne } from './utils/handleDates';
 import Popup from './Components/Popup';
+import languages from './utils/languages';
 
 let json = [];
 
@@ -15,9 +16,14 @@ const App = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [campaignList, setCampaignList] = useState([])
   const [fullList, setFullList] = useState([])
+  const [language, setLanguage] = useState(languages("EN"))
 
   const showHidePopup = (campaign) => {
     setPopup(campaign);
+  }
+
+  const handleLanguage = (e) => {
+    setLanguage(languages(e.target.value))
   }
 
   const handleActiveTab = (id) => {
@@ -56,12 +62,12 @@ const App = () => {
 
   return (
     <div>
-      <Header/>
+      <Header handleLanguage = {handleLanguage}/>
       <div className = "body-container">
         {popup? <Popup showHidePopup = {showHidePopup} popup = {popup}/>: null}
-        <h1 style = {{color: "#1F2740"}}>Manage Campaigns</h1>
-        <NavigationBar activeTab = {activeTab} handleActiveTab = {handleActiveTab}/>
-        <CampaignList id = {activeTab} campaignList = {campaignList} showHidePopup = {showHidePopup} reschedule = {reschedule}/>
+        <h1 style = {{color: "#1F2740"}}>{language.heading}</h1>
+        <NavigationBar activeTab = {activeTab} handleActiveTab = {handleActiveTab} language = {language}/>
+        <CampaignList id = {activeTab} campaignList = {campaignList} showHidePopup = {showHidePopup} reschedule = {reschedule} language = {language}/>
       </div>
     </div>
   )

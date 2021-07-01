@@ -3,6 +3,12 @@
     gap: 2rem;
 }
 
+@media only screen and (max-width: 824px) {
+    .nav-bar {
+        font-size: 140%;
+    }
+  }
+
 .inactive-tab {
     cursor: pointer;
     text-align: center;

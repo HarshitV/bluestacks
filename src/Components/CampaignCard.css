@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 824px) {
     .actions {
         display: block;
     }

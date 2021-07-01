@@ -12,14 +12,14 @@ import "react-datepicker/dist/react-datepicker.css";
 const CampaignCard = props => {
 
     const renderCampaginCard = () => {
-        const {showHidePopup, reschedule, campaignList, id} = props;
+        const {showHidePopup, reschedule, campaignList, language, id} = props;
         let myList = []
         campaignList.forEach(campaign => {
             const campaignDate = new Date(campaign.createdOn);
             const date = campaignDate.toLocaleString('default', { month: 'short' }) + " " + campaignDate.getFullYear() + ", " + campaignDate.getDate();
             const today = new Date();
             const diff = parseInt((today - campaignDate) / (1000 * 60 * 60 * 24), 10); 
-            let numberMessage = getDayMessage(id, diff);
+            let numberMessage = getDayMessage(id, diff, language);
             
             myList.push(
             <div key = {campaign.id} className="card-content card-body">
@@ -30,7 +30,7 @@ const CampaignCard = props => {
                 </div>
                 </div>
                 <div className = "campaign"><img loading = "lazy" src = {campaign.image_url} alt = "icon" className = "game-icon"/><div><div style={{ color: "#2C406C" }}>{campaign.name}</div><div style={{ fontStyle: "italic", fontSize: "13px" }}>{campaign.region}</div></div></div>
-                <div className = "action" onClick = {() => showHidePopup(campaign)}><img src = {priceLogo} alt = "price-icon" className = "action-icon"/>View Pricing</div>
+                <div className = "action" onClick = {() => showHidePopup(campaign)}><img src = {priceLogo} alt = "price-icon" className = "action-icon"/>{language.pricing}</div>
                 <div className = "actions">
                     <div className = "action">
                         <img src = {fileLogo} alt = "file-icon" className = "action-icon"/>
@@ -38,10 +38,10 @@ const CampaignCard = props => {
                     </div>
                     <div className = "action">
                         <img src = {statsLogo} alt = "calendar-icon" className = "action-icon"/>
-                        <div >Report</div>
+                        <div >{language.report}</div>
                     </div>
                     <div className = "action">
-                        <DatePicker customInput={<div style = {{display: "flex", alignItems: "center"}}><img style = {{height: "1.6rem"}} src = {calendarLogo} alt = "calendar-icon" className = "action-icon"/><div>Schedule Again</div></div>} selected={new Date(campaign.createdOn)} onChange={(date) => reschedule(id,campaign,date)} />
+                        <DatePicker customInput={<div style = {{display: "flex", alignItems: "center"}}><img style = {{height: "1.6rem"}} src = {calendarLogo} alt = "calendar-icon" className = "action-icon"/><div>{language.schedule}</div></div>} selected={new Date(campaign.createdOn)} onChange={(date) => reschedule(id,campaign,date)} />
                     </div>
                 </div>
             </div>

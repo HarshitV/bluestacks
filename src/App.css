@@ -5,3 +5,12 @@
 h1 {
   font-size: 2.5rem;
 }
+
+@media only screen and (max-width: 824px) {
+  h1 {
+      font-size: 4rem;
+  }
+  .body-container {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
