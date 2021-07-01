@@ -4,7 +4,7 @@ import './App.css'
 import CampaignList from './Components/CampaignList'
 import Header from './Components/Header'
 import NavigationBar from './Components/NavigationBar'
-import { getDayDifference, getDayDifferenceForOne } from './utils/getDayDifference';
+import { getDayDifference, getDayDifferenceForOne } from './utils/handleDates';
 import Popup from './Components/Popup';
 
 let json = [];

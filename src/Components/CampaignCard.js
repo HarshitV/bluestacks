@@ -1,6 +1,6 @@
 import React from 'react'
 import './CampaignCard.css'
-import { getDayMessage } from '../utils/getDayDifference';
+import { getDayMessage } from '../utils/handleDates';
 import fileLogo from '../images/file.png'
 import priceLogo from '../images/Price.png'
 import calendarLogo from '../images/calendar.png'
