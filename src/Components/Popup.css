@@ -43,7 +43,7 @@
     justify-content: space-between;
 }
 
-button {
+.close-button {
     margin-top: 1rem;
     background-color: white;
     width: 6rem;
@@ -51,7 +51,7 @@ button {
     cursor: pointer;
 }
 
-.close-button {
+.close-button-container {
     bottom: 1rem;
     display: flex;
     justify-content: center;

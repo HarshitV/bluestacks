@@ -13,7 +13,7 @@ const Popup = props => {
             <div className = "popup-pricing"><div>1 Week - 1 Month</div><div style = {{fontWeight: "bolder"}}>{campaign.price[0]}$</div></div>
             <div className = "popup-pricing"><div>6 Months</div><div style = {{fontWeight: "bolder"}}>{campaign.price[1]}$</div></div>
             <div className = "popup-pricing"><div>1 Year</div><div style = {{fontWeight: "bolder"}}>{campaign.price[2]}$</div></div>
-            <div className = "close-button"><button onClick = {() => showHidePopup(null)}>close</button></div>
+            <div className = "close-button-container"><button className = "close-button" onClick = {() => showHidePopup(null)}>close</button></div>
         </div>
         </div>
     )

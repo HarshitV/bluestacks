@@ -6,27 +6,27 @@ const server = () => {
   const list = {
     "data": [{
         "id": 1,
-        "name": "Test Whatsapp",
-        "region": "US",
+        "name": "Auto Chess",
+        "region": "UK",
         "createdOn": 1656431413000,
-        "price": [100,500,900],
+        "price": [50,500,650],
         "csv": "Some CSV link for Whatsapp",
         "report": "Some report link for Whatsapp",
         "image_url":"https://bluestacksproject.s3.us-east-2.amazonaws.com/Page+1/Dashboard-2/Row/Thumb/Bitmap.png" 
       },
       {
         "id": 2,
-        "name": "Super Jewels Quest",
+        "name": "Flow Free",
         "region": "CA, FR",
         "createdOn": 1559806715124,
-        "price": [100,500,900],
+        "price": [0,0,0],
         "csv": "Some CSV link for Super Jewels Quest",
         "report": "Some report link for Super Jewels Ques",
-        "image_url":"https://bluestacksproject.s3.us-east-2.amazonaws.com/Page+1/Dashboard-2/Row+Copy-Row/Thumb/Bitmap.png"
+        "image_url":"https://bluestacksproject.s3.us-east-2.amazonaws.com/Page+1/Dashboard/Row+Copy+2-Row/Thumb/Bitmap.png"
       },
       {
         "id": 3,
-        "name": "Mole Slayer",
+        "name": "Garena Free Fire",
         "region": "FR",
         "createdOn": 1624549813000,
         "price": [100,500,900],
@@ -38,7 +38,7 @@ const server = () => {
         "id": 4,
         "name": "MORTAL KOMBAT",
         "region": "JP",
-        "createdOn": 1567093813000,
+        "createdOn": 1625761271000,
         "price": [100,500,900],
         "csv": "Some CSV link for Mancala Mix",
         "report": "Some report link for Mancala Mix",
@@ -58,11 +58,31 @@ const server = () => {
         "id": 6,
         "name": "Shadow Fight 3",
         "region": "JP",
-        "createdOn": 1567093813000,
+        "createdOn": 1626106871000,
         "price": [100,500,900],
         "csv": "Some CSV link for Mancala Mix",
         "report": "Some report link for Mancala Mix",
         "image_url":"https://bluestacksproject.s3.us-east-2.amazonaws.com/Page+1/Dashboard-2/Row+Copy+7-Row/Thumb/Bitmap.png"
+      },
+      {
+        "id": 7,
+        "name": "Summoners War",
+        "region": "JP",
+        "createdOn": 1625761271000,
+        "price": [200,400,700],
+        "csv": "Some CSV link for Mancala Mix",
+        "report": "Some report link for Mancala Mix",
+        "image_url":"https://bluestacksproject.s3.us-east-2.amazonaws.com/Page+1/Dashboard/Row+Copy-Row/Thumb/Bitmap.png"
+      },
+      {
+        "id": 8,
+        "name": "PUBG MOBILE",
+        "region": "JP",
+        "createdOn": 1625934071000,
+        "price": [300,800,1200],
+        "csv": "Some CSV link for Mancala Mix",
+        "report": "Some report link for Mancala Mix",
+        "image_url":"https://bluestacksproject.s3.us-east-2.amazonaws.com/Page+1/Dashboard/Row+Copy+5-Row/Thumb/Bitmap.png"
       }
     ]
   };

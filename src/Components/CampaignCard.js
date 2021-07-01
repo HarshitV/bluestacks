@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import './CampaignCard.css'
 import { getDayMessage } from '../utils/getDayDifference';
 import fileLogo from '../images/file.png'
