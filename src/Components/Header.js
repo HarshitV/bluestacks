@@ -7,10 +7,12 @@ const Header = props => {
     return (
         <div className = "header">
             <img className = "logo" alt = "bluestackslogo" src = {blueStacksLogo}/>
-            <div className = "radio-button" onChange = {props.handleLanguage}>
-                <input name = "language" value = "EN" type = "radio" defaultChecked/> EN
-                <input name = "language" value = "DE" type = "radio"/> DE
-            </div>
+            <select className = "dropdown" onChange = {props.handleLanguage}>
+                <option name = "language" value = "EN">English</option>
+                <option name = "language" value = "DE">German</option>
+                {/* <input name = "language" value = "EN" type = "radio" defaultChecked/> EN
+                <input name = "language" value = "DE" type = "radio"/> DE */}
+            </select>
         </div>
     )
 }
