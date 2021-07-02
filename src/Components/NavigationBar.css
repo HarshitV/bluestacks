@@ -1,25 +1,25 @@
 .nav-bar {
-    display: flex;
-    gap: 2rem;
-    border-bottom: 1px solid #F1F1F4;
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid #f1f1f4;
 }
 
 @media only screen and (max-width: 824px) {
-    .nav-bar {
-        font-size: 140%;
-    }
+  .nav-bar {
+    font-size: 140%;
   }
+}
 
 .inactive-tab {
-    cursor: pointer;
-    text-align: center;
+  cursor: pointer;
+  text-align: center;
 }
 
 .active-tab {
-    padding-bottom: 1rem;
-    color: #84A515;
-    text-align: center;
-    cursor: pointer;
-    font-weight: bolder;
-    border-bottom: solid 3px #84A515;
+  padding-bottom: 1rem;
+  color: #84a515;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+  border-bottom: solid 3px #84a515;
 }

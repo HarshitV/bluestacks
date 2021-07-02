@@ -1,29 +1,29 @@
 .action-icon {
-    height: 1.5rem;
-    margin-right: 0.25rem;
+  height: 1.5rem;
+  margin-right: 0.25rem;
 }
 
 .actions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 824px) {
-    .actions {
-        display: block;
-    }
+  .actions {
+    display: block;
+  }
 }
 
 .action {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin: 3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 3px;
 }
 
 .game-icon {
-    width: 2.5rem;
-    margin-right: 1rem;
+  width: 2.5rem;
+  margin-right: 1rem;
 }

@@ -1,5 +1,5 @@
 const languageData = {
-    "EN" : {
+    "EN": {
         name: "English",
         heading: "Manage Campaigns",
         statustab1: "Upcoming Campaigns",
@@ -12,10 +12,10 @@ const languageData = {
         pricing: "View Pricing",
         report: "Report",
         schedule: "Schedule Again",
-        period: ["day","month","year","s","ahead","Ongoing","ago"],
-        popup: ["Pricing","Week","Close"]
+        period: ["day", "month", "year", "s", "ahead", "Ongoing", "ago"],
+        popup: ["Pricing", "Week", "Close"]
     },
-    "DE" : {
+    "DE": {
         name: "German",
         heading: "Kampagnen verwalten",
         statustab1: "Kommende Kampagnen",
@@ -28,8 +28,8 @@ const languageData = {
         pricing: "Preise anzeigen",
         report: "Bericht",
         schedule: "Erneut planen",
-        period: ["Tag","Monat","Jahr","e","voraus","Laufend","vor"],
-        popup: ["Preisgestaltung","Woche","Schließen"]
+        period: ["Tag", "Monat", "Jahr", "e", "voraus", "Laufend", "vor"],
+        popup: ["Preisgestaltung", "Woche", "Schließen"]
     }
 };
 

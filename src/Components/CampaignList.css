@@ -1,42 +1,42 @@
 .campaign-card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin: 3rem 0 3rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 3rem 0 3rem 0;
 }
 
 .card-content {
-    color: #5A6A8C;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 15% 30% 20% 35%;
+  color: #5a6a8c;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 15% 30% 20% 35%;
 }
 
 @media only screen and (max-width: 824px) {
-    .card-content {
-        grid-template-columns: 20% 35% 20% 25%;
-    }
+  .card-content {
+    grid-template-columns: 20% 35% 20% 25%;
+  }
 }
 
 .card-header {
-    background-color: #F1F1F4;
-    font-weight: bolder;
-    height: 3rem;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-weight: bolder;
+  background-color: #f1f1f4;
+  font-weight: bolder;
+  height: 3rem;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-weight: bolder;
 }
 
 .card-body {
-    min-height: 5rem;
-    border-bottom: 1px solid #F1F1F4;
+  min-height: 5rem;
+  border-bottom: 1px solid #f1f1f4;
 }
 
 .campaign {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .card-data {
-    padding-left: 2%;
-    padding-right: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
