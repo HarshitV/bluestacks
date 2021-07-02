@@ -70,8 +70,8 @@ const server = () => {
       "region": "JP",
       "createdOn": 1625761271000,
       "price": [200, 400, 700],
-      "csv": "Some CSV link for Summoners Wa",
-      "report": "Some report link for Summoners Wa",
+      "csv": "Some CSV link for Summoners War",
+      "report": "Some report link for Summoners War",
       "image_url": "https://bluestacksproject.s3.us-east-2.amazonaws.com/Page+1/Dashboard/Row+Copy-Row/Thumb/Bitmap.png"
     },
     {
