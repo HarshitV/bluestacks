@@ -64,7 +64,7 @@ const App = () => {
     <div>
       <Header handleLanguage = {handleLanguage}/>
       <div className = "body-container">
-        {popup? <Popup showHidePopup = {showHidePopup} popup = {popup}/>: null}
+        {popup? <Popup showHidePopup = {showHidePopup} popup = {popup} language = {language}/>: null}
         <h1 style = {{color: "#1F2740"}}>{language.heading}</h1>
         <NavigationBar activeTab = {activeTab} handleActiveTab = {handleActiveTab} language = {language}/>
         <CampaignList id = {activeTab} campaignList = {campaignList} showHidePopup = {showHidePopup} reschedule = {reschedule} language = {language}/>

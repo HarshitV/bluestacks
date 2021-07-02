@@ -28,7 +28,7 @@
 
 .card-body {
     min-height: 5rem;
-    border-bottom: 0.5px solid #F1F1F4;
+    border-bottom: 1px solid #F1F1F4;
 }
 
 .campaign {
