@@ -27,3 +27,8 @@
   width: 2.5rem;
   margin-right: 1rem;
 }
+
+.italic-subtext {
+  font-style: italic;
+  font-size: 0.75rem;
+}

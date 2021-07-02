@@ -15,7 +15,7 @@ const Popup = ({ showHidePopup, popup: campaign, language }) => {
             <div style={{ fontWeight: "bolder", color: "#2C406C" }}>
               {campaign.name}
             </div>
-            <div style={{ marginTop: "1rem", fontSize: "13px" }}>
+            <div style={{ marginTop: "1rem", fontSize: "0.8rem" }}>
               {campaign.region}
             </div>
           </div>
@@ -36,6 +36,7 @@ const Popup = ({ showHidePopup, popup: campaign, language }) => {
           <div style={{ fontWeight: "bolder" }}>{campaign.price[2]}$</div>
         </div>
         <div className="close-button-container">
+          {/* Set popup to null on clicking close */}
           <button className="close-button" onClick={() => showHidePopup(null)}>
             {language.popup[2]}
           </button>

@@ -11,12 +11,14 @@ const CampaignList = ({
 }) => {
   return (
     <div className="campaign-card">
+      {/* Render Card Header */}
       <div className="card-content card-header">
         <div>{language.date}</div>
         <div>{language.campaign}</div>
         <div>{language.view}</div>
         <div>{language.actions}</div>
       </div>
+      {/* Render Card Data */}
       <div className="card-data">
         <CampaignCard
           reschedule={reschedule}

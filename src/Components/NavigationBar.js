@@ -2,6 +2,7 @@ import React from "react";
 import "./NavigationBar.css";
 
 const NavigationBar = ({ activeTab, handleActiveTab, language }) => {
+  // Render Navigation Tabs with different classes for active/inactive tabs
   const renderNavigationList = () => {
     const navList = [
       language.statustab1,

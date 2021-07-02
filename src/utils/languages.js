@@ -13,7 +13,7 @@ const languageData = {
     report: "Report",
     schedule: "Schedule Again",
     period: ["day", "month", "year", "s", "ahead", "Ongoing", "ago"],
-    popup: ["Pricing", "Week", "Close"],
+    popup: ["Pricing", "Week", "Close"]
   },
   DE: {
     name: "German",
@@ -29,10 +29,11 @@ const languageData = {
     report: "Bericht",
     schedule: "Erneut planen",
     period: ["Tag", "Monat", "Jahr", "e", "voraus", "Laufend", "vor"],
-    popup: ["Preisgestaltung", "Woche", "Schließen"],
-  },
+    popup: ["Preisgestaltung", "Woche", "Schließen"]
+  }
 };
 
+// languageData[EN] - ENGLISH | languageData[DE] - GERMAN
 const languages = (language) => {
   return languageData[language];
 };

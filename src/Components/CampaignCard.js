@@ -17,8 +17,10 @@ const CampaignCard = ({
 }) => {
   const renderCampaginCard = () => {
     let myList = [];
+    // Iterate for each campaign for current tab
     campaignList.forEach((campaign) => {
       const campaignDate = new Date(campaign.createdOn);
+      // Convert date to Mon YYYY, DD format
       const date =
         campaignDate.toLocaleString("default", { month: "short" }) +
         " " +
@@ -27,17 +29,17 @@ const CampaignCard = ({
         campaignDate.getDate();
       const today = new Date();
       const diff = parseInt((today - campaignDate) / (1000 * 60 * 60 * 24), 10);
+      // Get the x days ago, y months ahead etc. message
       let numberMessage = getDayMessage(id, diff, language);
 
       myList.push(
         <div key={campaign.id} className="card-content card-body">
           <div>
             <div style={{ color: "#2C406C" }}>{date}</div>{" "}
-            <div style={{ fontStyle: "italic", fontSize: "13px" }}>
-              {numberMessage}
-            </div>
+            <div className="italic-subtext">{numberMessage}</div>
           </div>
           <div className="campaign">
+            {/* Lazy load game logos for faster initial render */}
             <img
               loading="lazy"
               src={campaign.image_url}
@@ -46,9 +48,7 @@ const CampaignCard = ({
             />
             <div>
               <div style={{ color: "#2C406C" }}>{campaign.name}</div>
-              <div style={{ fontStyle: "italic", fontSize: "13px" }}>
-                {campaign.region}
-              </div>
+              <div className="italic-subtext">{campaign.region}</div>
             </div>
           </div>
           <div className="action" onClick={() => showHidePopup(campaign)}>
@@ -69,6 +69,7 @@ const CampaignCard = ({
               <div>{language.report}</div>
             </div>
             <div className="action">
+              {/* Open date picker on clicking schedule again icon/text */}
               <DatePicker
                 customInput={
                   <div style={{ display: "flex", alignItems: "center" }}>
