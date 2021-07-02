@@ -56,11 +56,11 @@ const CampaignCard = ({
             {language.pricing}
           </div>
           <div className="actions">
-            <div className="action">
+            <div className="action" onClick={() => alert(campaign.csv)}>
               <img src={fileLogo} alt="file-icon" className="action-icon" />
               <div>CSV</div>
             </div>
-            <div className="action">
+            <div className="action" onClick={() => alert(campaign.report)}>
               <img
                 src={statsLogo}
                 alt="calendar-icon"
