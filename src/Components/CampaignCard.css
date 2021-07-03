@@ -10,17 +10,55 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 824px) {
-  .actions {
-    display: block;
-  }
-}
-
 .action {
   display: flex;
   align-items: center;
   cursor: pointer;
   margin: 3px;
+}
+
+@media only screen and (max-width: 824px) {
+  .actions {
+    display: block;
+  }
+  .action {
+    margin: 1rem;
+  }
+  .action-icon {
+    height: 1.8rem;
+    font-size: 1.1rem;
+    margin-right: 0.25rem;
+  }
+  .react-datepicker {
+    font-size: 1.5em !important;
+  }
+  .react-datepicker__header {
+    padding-top: 0.8em !important;
+  }
+  .react-datepicker__month {
+    margin: 0.4em 1em !important;
+  }
+  .react-datepicker__day-name, .react-datepicker__day {
+    width: 1.9em !important;
+    line-height: 1.9em !important;
+    margin: 0.166em !important;
+  }
+  .react-datepicker__current-month {
+    font-size: 1.5em !important;
+  }
+  .react-datepicker__navigation {
+    top: 1em !important;
+    line-height: 1.7em !important;
+    border: 0.45em solid transparent;
+  }
+  .react-datepicker__navigation--previous {
+    border-right-color: #ccc !important;
+    left: 1em !important;
+  }
+  .react-datepicker__navigation--next {
+    border-left-color: #ccc !important;
+    right: 1em !important;
+  }
 }
 
 .game-icon {
