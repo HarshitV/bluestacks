@@ -53,3 +53,16 @@
   display: flex;
   justify-content: center;
 }
+
+@media only screen and (max-width: 824px) {
+  .popup-content {
+    width: 25rem;
+    height: 30rem;
+    font-size: 200% !important;
+  }
+  .close-button {
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+}
