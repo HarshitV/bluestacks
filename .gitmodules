@@ -1,0 +1,3 @@
+[submodule "virtualkeyboard"]
+	path = virtualkeyboard
+	url = https://github.com/HarshitV/virtualkeyboard
